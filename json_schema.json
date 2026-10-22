@@ -1,0 +1,12 @@
+{
+    "title": "Person",
+    "description": "A person with a name and age",
+    "type": "object",
+    "properties":{
+        "name":"string",
+        "age":"integer"
+    },
+    "required": ["name", "age"]
+
+
+}
