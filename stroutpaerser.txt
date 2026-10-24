@@ -1,0 +1,20 @@
+template1 = prompttemplate(
+    template - 'detai;ed report o {topic}'
+    input_variables = ['text]
+)
+prompt1 = template1.invoke({'text: 'black hole})
+result1 = model.invoke(promopt1)
+
+
+parser = StrOutputParser(  )
+chain = template1 | model | parser | template2
+| model | parser 
+
+chain.invoke({'topic : 'black hole} )
+print(result)
+
+structured StrOutputParser is same as jsonoutput
+parser but thing is it is same just schema
+is passed here
+
+
